@@ -11,9 +11,9 @@
 		- instance - прави нова инстанция http://upstart.ubuntu.com/cookbook/#instance
 		- последния ред ще пуска серийната конзола с скорост 115200 бита и без паритет(n). 
 
-линкове:
-http://upstart.ubuntu.com/cookbook
-https://help.ubuntu.com/community/SerialConsoleHowto
+	в. линкове:
+		- http://upstart.ubuntu.com/cookbook
+		- https://help.ubuntu.com/community/SerialConsoleHowto
 
 2.Задача - /etc/init/serial-console.conf
 
