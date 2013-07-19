@@ -1,0 +1,16 @@
+9. Create a job definition file for serial console with UpStart.
+-----------------------
+
+#serial console upstart job definition
+#This service maintain serial console tty 
+
+description "Serial Console tty"
+author "My name need to be here, but homework is anonymous :) "
+
+start on runlevel [2345]
+stop on runlevel [S016]
+ 
+respawn
+instance /dev/ttyS1
+exec /sbin/agetty ttyS1 115200
+
