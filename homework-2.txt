@@ -11,6 +11,6 @@ start on runlevel [2345]
 stop on runlevel [S016]
  
 respawn
-instance /dev/ttyS1
-exec /sbin/agetty ttyS1 115200
+instance /dev/ttyS0
+exec /sbin/agetty ttyS0 115200
 
