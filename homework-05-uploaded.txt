@@ -1,0 +1,22 @@
+4. Execute this: lynx --dump http://cnn.com
+   Now get a the count of:
+   - how many internal links (links to the same hostname - cnn.com)
+   		Comment: Probably the answer is 0 because cnn.com redirect your traffic to www.cnn.com which is subdomain
+   		Solution
+		lynx --dump http://cnn.com | grep -E  'http:\/\/cnn\.com' | wc -l
+
+   - how many external links (links to hostnames other then cnn.com)
+   		Solution
+   		4.b lynx --dump http://cnn.com | grep -v -E  'http:\/\/cnn\.com' | wc -l
+
+   - how many links to subdomains (links to hostnames *.cnn.com)
+   		Solution
+   		4.c lynx --dump http://cnn.com | grep -v -E  'http:\/\/*.\.cnn\.com'  | wc -l
+   - how many links to direct javascript executions (something like this 'javascript:')
+   		Solution
+   		4.d lynx --dump http://cnn.com | grep -E 'javascript:' |  wc -l
+
+
+
+
+
