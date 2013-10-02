@@ -10,7 +10,7 @@
 zone "maimunka.net" {
 	type master;
 	file "/etc/bind/db.maimunka.com" ;
-	allow-transfer {192.168.1.102;};
+	allow-transfer {192.168.1.2;};
 };
 
 
@@ -39,6 +39,4 @@ $TTL 86400
 		NS	ns2
 ns1		A	192.168.1.1
 ns2		A	192.168.1.2
-
-
 
